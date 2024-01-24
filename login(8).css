@@ -1,0 +1,141 @@
+/* Reset some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply some basic styling to the body */
+body {
+    font-family: cursive;
+    background-color:#fa9ebc ;
+}
+
+/* Style the navigation bar */
+nav {
+    background-color: #fa9ebc ;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the logo */
+.logo img {
+    max-width: 100px; /* Adjust the maximum width as needed */
+    height: auto;
+    border-radius: 50px;
+    width: 80%;
+}
+
+/* Style the back link */
+.back a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 25px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+/* Style the login box */
+.login-box {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 100px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #3a3939;
+    box-shadow: 0 4px 8px  #3a3939;
+}
+
+/* style */
+.login-box:hover {
+    background-color:#fa9ebc;
+    transition: background-color 0.2s ease;
+  }
+
+/* Style the login header */
+.login-box header {
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Style the input boxes */
+.input-box {
+    margin-bottom: 15px;
+}
+
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-family: serif;
+}
+
+/* Style the forgot section */
+.forgot {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+/* Style the input-submit section */
+.input-submit {
+    text-align: center;
+    display: flex;
+    justify-content:center;
+}
+
+/* Style the submit button */
+.submit-button {
+    padding: 10px 20px;
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+.submit-button button {
+    width: 90px;
+    padding: 10px;
+    color:black ;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid black;
+    text-align: center;
+    font-family: serif;
+    font-size: 15px;
+}
+button:hover {
+    color: #fa9ebc;
+}
+/* Style the "Don't have an account?" link */
+.input-submit p a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer {
+    max-width: 100%;
+    background-color: #3a3939;
+}
+.botton-bar {
+    padding: 10px 0;
+    margin-top: 50Fpx;
+}
+.bottom-bar > p {
+    color: white;
+    margin: 0;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 25px;
+    font-family: serif;
+}

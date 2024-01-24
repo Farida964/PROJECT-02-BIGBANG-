@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="regis(9).css">
+    <title>Registrasi</title>
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="logo.jpg" alt=""></div>
+    </nav>
+    <hr style="border: 1px solid black; margin: 0;">
+
+    <div class="regis-box">
+        <div class="regis-header">
+            <header>User Registration</header>
+        </div>
+
+        <div class="input-box">
+            <input type="text" class="input-field" placeholder="Full Name" id="fullname" required>
+        </div>
+
+        <div class="input-box">
+            <input type="email" class="input-field" placeholder="Email" id="email" required>
+        </div>
+
+        <div class="input-box">
+            <input type="text" class="input-field" placeholder="Create Username" id="username" required>
+        </div>
+        
+        <div class="input-box">
+            <input type="password" class="input-field" placeholder="Password" id="password01" required>
+        </div>
+
+        <div class="input-box">
+            <input type="password" class="input-field" placeholder="Cek Password" id="password02" required>
+        </div>
+
+        <div class="submit-button">
+            <button type="submit" onclick="regis()">Registration</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="bottom-bar">
+            <p>&copy; BigBang 2024</p>
+        </div>
+</footer>
+
+<script>
+    function regis() {
+        let fullname = document.getElementById("fullname").value;
+        let email = document.getElementById("email").value;
+        let username = document.getElementById("username").value;
+        let password01 = document.getElementById("password01").value;
+        let password02 = document.getElementById("password02").value;
+
+        if (fullname === "BigBang" && email === "bigbang@gmail.com" && username === "BigBang" && password01 === "yoimamen" && password02 === "yoimamen") {
+            alert("Registration Successful!");
+            window.location.href = "02_login_user.html"; 
+        } else {
+            alert("Invalid username or password. Please try again.") 
+        }
+        
+    }
+</script>
+</body>
+</html>

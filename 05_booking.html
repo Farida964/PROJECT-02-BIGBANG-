@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Service</title>
+    <style>
+nav {
+    background-color: #fa9ebc ;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+.menu {
+    margin-left: -600px;
+
+}
+nav span a {
+    color: black;
+    padding-right: 20px;
+}
+nav span a:hover{
+    color: white;
+}
+/* Style the logo */
+.logo img {
+    max-width: 100px; /* Adjust the maximum width as needed */
+    height: auto;
+    border-radius: 50px;
+    width: 80%;
+}
+
+/* Style the back link */
+.back a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 25px;
+   
+}
+.back p {
+  margin-top: 10px;
+}
+nav span a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+.submit input {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fa9ebc;
+    color: white;
+    box-shadow: 0 4px 8px  #3a3939 ;
+
+}
+.submit input:hover {
+    background-color:#3a3939;
+    transition: background-color 0.2s ease;
+}
+fieldset input {
+    border-radius: 5px;
+}
+fieldset {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px  #3a3939 ;
+}
+footer {
+    max-width: 100%;
+    background-color: #3a3939;
+}
+.botton-bar {
+    padding: 0;
+    margin-top: 0;
+}
+.bottom-bar > p {
+    color: white;
+    margin: 0;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 25px;
+    font-family: serif;
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    nav span {
+        margin: 0;
+    }
+
+    nav span a {
+        display: block;
+        padding: 10px;
+        color: white;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="back"><p style="font-family: cursive;"><a href="03_home.html"><<</a></p></div>
+        <div class="menu">
+            <span><strong><a href="03_home.html">Home</a></strong></span>
+            <span><a href="04_product.html">Product&Service</a></span>
+            <span><a href="05_booking.html">Booking</a></span>
+            <span><a href="07_transaksi.html">About Us</a></span>
+        </div>
+        
+        <div class="logo"><img src="logo.jpg" alt=""></div>
+    </nav>
+<div class="formulir">
+    <fieldset>
+        <legend style="font-family: 'Times New Roman', Times, serif;"><strong>Booking Service</strong></legend>
+
+        <label for="kendaraan">Jenis Kendaraan :</label>
+        <select>
+            <option value="Motor" id="kendaraan">Motor</option>
+            <option value="Mobil" id="kendaraan">Mobil</option>
+            <option value="Truck Mini" id="kendaraan">Truck Mini</option>
+        </select>
+        <br/>
+        <br/>
+        <!--inputan kedua-->
+        <label for nama="nama">Nama Pemesan :</label>
+        <input type="text" id="nama" name="nama"/>
+        <br/>
+        <br/>
+        <!--inputan ketiga-->
+        <label for="kategori">Kategori Peminjam :</label>
+        <input type="radio" name="kategori"/>Pribadi
+        <input type="radio" name="kategori"/>Perusahaan/organisasi
+        <br/>
+        <br/>
+        <!--inputan keempat-->
+        <div style="display: flex;">
+        <label for="deskripsi" style="display: block; padding-right: 5px;">Deskripsi Kebutuhan :</label>
+        <textarea style="display: block; border-radius: 5px;" cols="36" rows="6" id="deskripsi" name="deskripsi"></textarea>
+        </div>
+        <br/>
+        <br/>
+        <!--label kelima-->
+        <label for="tanggal">Tanggal Pemesanan :</label>
+        <input type="date" id="tanggal" name="tanggal">
+        <br/>
+        <br/>
+        <!--inputan keenam-->
+        <label for nama="montir">Request Montir :</label>
+        <input type="text" id="montir" name="montir"/>
+        <br/>
+        <br/>
+        <!--inputan ketujuh-->
+        <label for nama="no HP">No Handphone :</label>
+        <input type="number" id="no HP" name="no HP" placeholder="08xxx"/>
+        <br/>
+        <br/>
+        <!--inputan kedelapan-->
+        <label for nama="email">Email :</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com"/>
+        <br/>
+        <br/>
+        <!--Tombol Submit-->
+        <div class="submit">
+        <input type="submit"  value="Submit">
+        <input type="reset" value="Reset">
+        </div>
+   
+</section>
+    </fieldset>
+</div>
+<svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fc80be" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,234.7C384,245,480,267,576,266.7C672,267,768,245,864,224C960,203,1056,181,1152,186.7C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+<footer>
+    <div class="bottom-bar">
+        <p>&copy; BigBang 2024</p>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Montir</title>
+    <style>
+body {
+    width: 100%;
+}
+nav {
+    background-color: #fa9ebc ;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav span a {
+    color: black;
+    padding-right: 20px;
+}
+nav span a:hover{
+    color: white;
+}
+/* Style the logo */
+.logo img {
+    max-width: 100px; /* Adjust the maximum width as needed */
+    height: auto;
+    border-radius: 50px;
+    width: 80%;
+}
+
+/* Style the back link */
+.back a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 25px;
+    font-family: cursive;
+}
+.back p {
+  margin-top: 10px;
+}
+.menu {
+    font-size: 30px ;
+    font-family: cursive;
+}
+nav span a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+.nav-bar {
+    background-color: #353435;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.bar-menu {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+}
+.bar-menu span {
+    margin-right: 10px;
+}
+.bar-menu span a {
+    text-decoration: none;
+    color: white;
+}
+.bar-menu span a:hover {
+    color: black;
+}
+.wrap-nav {
+    flex-grow: 1;
+}
+.judul {
+    text-align: center;
+    color: white;
+}
+main {
+    display: flex;
+    flex: 1;
+    width: 100%;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #fc80be;
+    color: #fff;
+    padding: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.sidebar li {
+    margin-bottom: 5px;
+}
+
+.sidebar a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.sidebar a:hover {
+    background-color: #3a3939;
+}
+
+#content {
+    flex: 1;
+    padding: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.nav-bar ul li a:hover {
+    color: white;
+    transition: all .2s ease-in-out;
+}
+.search-container {
+    position: relative;
+    display: inline-block;
+    margin-right: 8px;
+    margin-bottom: 10px;
+}
+
+.search-input {
+    padding-left: 10px; 
+    width: 100px;
+    border: solid 2px black;
+    border-radius: 10px;
+}
+footer {
+    max-width: 100%;
+    background-color: #3a3939;
+}
+.botton-bar {
+    padding: 0;
+    margin-top: 0;
+}
+.bottom-bar > p {
+    color: white;
+    margin: 0;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 25px;
+    font-family: serif;
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    nav span {
+        margin: 0;
+    }
+
+    nav span a {
+        display: block;
+        padding: 10px;
+        color: white;
+    }
+}
+@media screen and (max-width: 768px) {
+    .wave {
+        display: none;
+    }
+
+    .main-container {
+        padding: 10px;
+    }
+    .main {
+        align-items: stretch;
+    }
+}
+
+/* Responsive Design for Footer */
+footer {
+    max-width: 100%;
+    background-color: #3a3939;
+}
+.botton-bar {
+    padding: 0;
+    margin-top: 0;
+}
+.bottom-bar > p {
+    color: white;
+    margin: 0;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 25px;
+    font-family: serif;
+}
+.submit {
+    margin-left: 300px;
+}
+.submit input {
+    background-color: #fa9ebc;
+    font-family: 'Times New Roman', Times, serif;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+}
+.submit input:hover {
+    background-color:#3a3939;
+    transition: background-color 0.2s ease;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="back"><p style="font-family: cursive;"><a href="03_home.html"><<</a></p></div>
+        <div class="menu">
+            <span><strong>Admin BIGBANG Bengkel</strong></span>
+        </div>
+        
+        <div class="logo"><img src="logo.jpg" alt=""></div>
+    </nav>
+    <hr style="border: 1px solid black; margin: 0;">
+
+<div class="nav-bar">
+    <div class="wrap-nav">
+        <h2 class="judul" flex-directio="left">Daftar Montir/Mekanik</h2>
+      </div>
+    <div class="bar-menu">
+        <span><strong><a href="03_home.html">Home ></a></strong></span>
+        <span><strong><a href="07_transaksi.html">About Us ></a></strong></span>
+        <span><a href="08_montir.html">Montir/Mekanik</a></span>
+    </div>
+
+</div>
+
+<main>
+    <div class="sidebar">
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search...">
+        </div>
+        <ul>
+            <li><a href="07_transaksi.html">Transaksi</a></li>
+            <li><a href="04_product.html">Produk</a></li>
+            <li><a href="08_montir.html">Montir/Mekanik</a></li>
+            <li><a href="02_login_user.html" id="logout">Logout</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <table>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Nama Mekanik</th>
+                    <th>Jenis Montir</th>
+                    <th>Pengalaman</th>
+                    <th>Action</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Ari Dermawan</td>
+                    <td>Senior Mekanik</td>
+                    <td>16 Tahun</td>
+                    <td>
+                        <button class="detail-btn">Detail</button>
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Farida Rabbani</td>
+                    <td>Junior Mekanik</td>
+                    <td>2 Tahun</td>
+                    <td>
+                        <button class="detail-btn">Detail</button>
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Najwa Nur Salimah</td>
+                    <td>Senior Mekanik</td>
+                    <td>11 Tahun</td>
+                    <td>
+                        <button class="detail-btn">Detail</button>
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Nurmila</td>
+                    <td>Junior Mekanik</td>
+                    <td>4 Tahun</td>
+                    <td>
+                        <button class="detail-btn">Detail</button>
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+                
+        
+
+        
+                <!-- Add more data rows as needed -->
+            </tbody>
+        </table>
+    </div>
+</main>
+<div class="submit" onclick="kelola()">
+    <input type="submit"  value="Kelola">
+</div>
+<svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fc80be" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,234.7C384,245,480,267,576,266.7C672,267,768,245,864,224C960,203,1056,181,1152,186.7C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+
+<footer>
+    <div class="bottom-bar">
+        <p>&copy; BigBang 2024</p>
+    </div>
+</footer>
+<script>
+     function kelola() {
+        window.location.href = '09_kelolamontir.html';
+    }
+</script>
+</body>
+</html>

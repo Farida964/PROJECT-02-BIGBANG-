@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login(8).css">
+    <title>Login</title>
+</head>
+<body>
+    <nav>
+        <div class="back"><p><a href="01_regis_user.html"><<</a></p></div>
+        <div class="logo"><img src="logo.jpg" alt=""></div>
+    </nav>
+    <hr style="border: 1px solid black; margin: 0;">
+    <div class="login-box">
+        <div class="login-header">
+            <header>Login</header>
+        </div>
+
+        <div class="input-box">
+            <input type="text" class="input-field" placeholder="Username" id="username" required>
+        </div>
+        <div class="input-box">
+            <input type="password" class="input-field" placeholder="Password" id="password" required>
+        </div>
+
+        <div class="submit-button">
+            <button type="button" onclick="loginSubmit()">Login</button>
+        </div>
+
+        <div class="forgot">
+            <section>
+                <input type="checkbox" id="check">
+                <label for="check" style="color: white;">Remember me</label>
+            </section>
+            <section>
+                <a href="#">Forgot your password?</a>
+            </section>
+        </div>
+
+        <div class="input-submit">
+            <p style="color: white;">Don't have account?</p>
+            <a href="#">Sign Up</a>
+        </div>
+
+    </div>
+
+    <footer>
+            <div class="bottom-bar">
+                <p>&copy; BigBang 2024</p>
+            </div>
+    </footer>
+
+    <script>
+        function loginSubmit() {
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+
+            if (username === "BigBang" && password === "yoimamen") {
+                alert("Login Successful!");
+                window.location.href = "03_home.html";
+            } else {
+                alert("Invalid username or password. Please try again.")
+            }
+
+        }
+    </script>
+</body>
+</html>
